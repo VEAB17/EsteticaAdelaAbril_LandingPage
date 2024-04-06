@@ -19,6 +19,8 @@ La landing page está desarrollada utilizando las siguientes tecnologías:
 - **Aplicacion de buenas practicas**
 
 ---
+La pagina se encuentra hosteada en el dominio ___https://esteticaadelaabril-landingpage.pages.dev/___
+---
 
 Para ejecutar la landing page localmente en tu máquina, sigue estos pasos:
 
