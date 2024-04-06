@@ -1,0 +1,111 @@
+.servicios__titulo{
+    text-align: center;
+    font-size: large;
+}
+
+.servicios{
+    display: flex;
+    justify-content: center;
+}
+
+.servicios__contenedor{
+    width: 80%;
+}
+
+.servicios__caja__derecha{
+    display:flex;
+    margin-bottom: 70px;
+    border-radius: 20px;
+}
+
+.servicios__caja__derecha:hover, .servicios__caja__izquierda:hover{
+    .servicios__nombre{
+        transition : 0.3s;
+        color: rgb(179, 150, 69);
+    }
+    .servicios__foto{
+        transition: 0.3s;
+        width: 300px;
+    }
+}
+
+.servicios__caja__izquierda{
+    display:flex;
+    margin-bottom: 70px;
+    justify-content: flex-end;
+}
+
+.servicios__foto{
+    transition : 0.3s;
+    width: 250px;
+}
+
+.servicios__texto{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#tratamiento, #tinta{
+    text-align: right;
+    
+}
+
+.servicios__contenedor__foto{
+    display: flex;
+}
+
+@media (max-width: 850px) {
+    .servicios__foto{
+        width: 200px;
+        height: 200px;
+    }
+
+    .servicios__texto{
+        margin: 0;
+        font-size: small;
+    }
+
+    .servicios__caja__derecha{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+        border-radius: 20px;
+    }
+
+    .servicios__caja__izquierda{
+        display:flex;
+        margin-bottom: 70px;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+    }
+
+    .servicios__contenedor__foto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicios__caja__derecha:hover, .servicios__caja__izquierda:hover{
+        .servicios__nombre{
+            transition : 0.3s;
+            color: rgb(179, 150, 69);
+        }
+        .servicios__foto{
+            transition: 0.3s;
+            width: 250px;
+            height: 250px;
+        }
+        .servicios__nombre{
+            font-size: x-large;
+        }
+        .servicios__descripcion{
+            font-size: 17px;
+        }
+    }
+    .servicios__nombre{
+        text-align: center;
+    }
+
+    .servicios__descripcion {
+        text-align: center
+    }
+}

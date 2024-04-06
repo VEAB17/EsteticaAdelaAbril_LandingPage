@@ -1,0 +1,83 @@
+::selection { 
+    background: rgb(179, 150, 69);
+    color:#fff;
+}
+
+.footer__contenedor{
+    margin-top: 50px;
+    width: 100%;
+    background-color:black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footer__logoVertical{
+    width: 100px;
+    filter: invert();
+    margin-top:20px;
+    
+}
+
+.footer__items {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas de tamaño mínimo de 300px */
+    grid-auto-flow: dense; /* Los elementos se colocarán en filas adicionales si no hay suficiente espacio */
+    justify-items: center;
+    color: white;
+}
+
+.footer__redirecciones{
+    display: flex;
+    gap: 0px;
+    margin-left: 7px;
+    margin-top: 50px;
+}
+
+.footer__logoInstagram, .footer__logoWhatsapp{
+    width: 35px;
+
+}
+
+.footer__linea{
+    width: 1px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: white;
+}
+
+.footer__horario__titulo{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.footer__horario__contenedor{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer__horario__dia{
+    font-weight: bolder;
+    font-size: small;
+    display: flex;
+    align-items: center;
+}
+
+.footer__horario__hora{
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacto{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 160px;
+}

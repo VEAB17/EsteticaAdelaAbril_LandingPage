@@ -1,0 +1,29 @@
+.ubicacion__contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacion__direccion{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacion__direccion_textoYlogo{
+    width: 900px;
+}
+
+.ubicacion__textoDireccion{
+    margin-bottom:2px;
+}
+
+.ubicacion__mapa{
+    margin:0px 20px 0px 20px;
+}
+
+@media (max-width: 920px) {
+    .ubicacion__textoDireccion{
+        margin-left:20px;
+    }
+}

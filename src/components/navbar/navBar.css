@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Abhaya';
+    src: url('../../assets/AbhayaLibre-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/Montserrat-ExtraLight.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.volver{
+    width: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    cursor: default;
+    opacity: 0;
+    animation: aparecerBoton linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
+    z-index: 9999999999;
+}
+
+.whatsapp{
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.navBar__limite{
+    z-index: 9999;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.551), rgba(255, 255, 255, 0.501));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    animation: difuminar linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
+}
+
+@keyframes aparecerBoton {
+    to{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+@keyframes difuminar {
+    to {
+        backdrop-filter: blur(7px);
+
+    }
+}
+
+@keyframes achicarLetra {
+    to{
+    
+    }
+}
+
+@keyframes moverLogo {
+    to{
+        width: 150px;
+    }
+}
+
+.navBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.navBar__item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    animation: achicarLetra linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
+}
+
+.navBar__item__text{
+    text-decoration: none;
+    color:black;
+    font-size: medium;
+
+    animation: achicarLetra linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
+}
+
+.navBar__logo{
+    width: 200px;
+
+    animation: moverLogo linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
+}
+
+.navBar__item:hover .navBar__item__text {
+    color: rgb(179, 150, 69); 
+    transition: color 0.3s;
+
+    animation: achicarLetra linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
+}
+
+@keyframes alejarBorde {
+    to{
+        margin-top: 2px;
+    }
+}
+
+.navBar__item::after {
+    content: '';
+    position: absolute;
+    left: 0; 
+    bottom: 12px;
+    width: 100%;
+    height: 0.5px; 
+    background-color: rgb(179, 150, 69); 
+    transform: scaleX(0);
+    transition: transform 0.3s;
+
+    animation: alejarBorde linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
+}
+
+.navBar__item:hover::after {
+    transform: scaleX(1);
+
+    animation: achicarLetra linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
+}
+
+.sideBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999999999999999;
+    background-color: rgba(255, 255, 255, 0.411);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+}
+
+.sideBar__item{
+    display: flex;
+    cursor: pointer;
+}
+
+.sideBar__item__text{
+    text-decoration: none;
+    color:black;
+    font-size: medium;
+}
+
+.botonMenuCerrar{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(30px);
+    background-color: #ffffff75;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 9999999999999;
+  }
+  
+  .sidebar.open {
+    width: 270px;
+  }
+  
+  .sidebar ul {
+    padding: 0;
+  }
+  
+  .sidebar li {
+    list-style: none;
+  }
+  
+  .sidebar a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .sidebar a:hover {
+    background-color: rgba(179, 150, 69, 0.322);
+  }
+
+  .toggle-btn{
+    position: sticky;
+    right: 0;
+    display: none;
+  }
+
+  .botonMenuAbrir{
+    display: none;
+    width: 35px;
+    height: 35px;
+  }
+
+  .centrarMenuAbrir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+@media (max-width: 768px) {
+    .botonMenuAbrir{
+        display: block;
+    }
+    .navBar__item{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 77%;
+        max-width: 1200px;
+    }
+
+    .whatsapp{
+        display: block;
+        margin-left: 2vh;
+        margin-bottom: 2vh;
+        position: fixed;
+        border-radius: 100%;
+        left: 0;
+        bottom: 0;
+    }
+    .whatsapp img {
+        width: 60px;
+        height: 60px;
+    }
+}

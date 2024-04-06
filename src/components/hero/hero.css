@@ -1,0 +1,23 @@
+.hero__contenedor{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero__fotoModelo {
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/fotopelo4.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .hero__fotoModelo {
+        background-position: center top;
+        height: 50vh;
+        width: 100%;
+    }
+}
