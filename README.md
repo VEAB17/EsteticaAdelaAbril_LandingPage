@@ -32,10 +32,10 @@ Para ejecutar la landing page localmente en tu máquina, sigue estos pasos:
 
 3. Instala las dependencias del proyecto:
 
-   ___npm install__
+   ___npm install___
 
 4. Inicia el servidor de desarrollo:
 
-   __npm run dev__
+   ___npm run dev___
 
 5. Abre tu navegador web y ve a la dirección `http://localhost:3000` para ver la landing page en funcionamiento.
