@@ -17,3 +17,25 @@ La landing page está desarrollada utilizando las siguientes tecnologías:
 - **Diseno simple y moderno**
 - **Diseno Responsive para todos los dispositivos**
 - **Aplicacion de buenas practicas**
+
+---
+
+Para ejecutar la landing page localmente en tu máquina, sigue estos pasos:
+
+1. Clona este repositorio en tu equipo:
+
+   ___git clone https://github.com/VEAB17/EsteticaAdelaAbril_LandingPage.git___
+
+2. Navega al directorio del proyecto:
+
+   ___cd landing_peluqueria___
+
+3. Instala las dependencias del proyecto:
+
+   ___npm install__
+
+4. Inicia el servidor de desarrollo:
+
+   __npm run dev__
+
+5. Abre tu navegador web y ve a la dirección `http://localhost:3000` para ver la landing page en funcionamiento.
