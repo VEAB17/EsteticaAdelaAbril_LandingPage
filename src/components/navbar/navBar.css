@@ -273,6 +273,7 @@ nav{
         border-radius: 100%;
         left: 0;
         bottom: 0;
+        z-index: 9999999;
     }
     .whatsapp img {
         width: 60px;
