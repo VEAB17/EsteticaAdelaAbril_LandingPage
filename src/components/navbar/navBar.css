@@ -206,6 +206,10 @@ nav{
     overflow-x: hidden;
     transition: 0.3s;
     z-index: 9999999999999;
+
+    animation: difuminar linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
   }
   
   .sidebar.open {
