@@ -72,7 +72,6 @@ nav{
 @keyframes difuminar {
     to {
         backdrop-filter: blur(7px);
-
     }
 }
 
@@ -215,6 +214,11 @@ nav{
   .sidebar.open {
     width: 270px;
     backdrop-filter: blur(30px);
+
+    
+    animation: difuminar linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
   }
   
   .sidebar ul {
