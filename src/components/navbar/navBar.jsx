@@ -31,7 +31,7 @@ function scrollToTop() {
 }
 
 function redirect(){
-    window.open('https://wa.me/59892144150?text=Hola,%20me%20interesa%20uno%20de%20sus%20servicios', '_blank');
+    window.open('https://wa.me/59898629918', '_blank');
 }
 
 const NavBar = () => {
